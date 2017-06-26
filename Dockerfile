@@ -7,5 +7,5 @@ RUN mvn clean install
 
 FROM jboss/wildfly:10.1.0.Final
 
-COPY --from=BUILD ./target/*.war /opt/jboss/wildfly/standalone/deployments/*.war
+COPY --from=BUILD ./target/projectx_web-1.0-SNAPSHOT.war /opt/jboss/wildfly/standalone/deployments/projectx_web-1.0.war
 
