@@ -17,7 +17,7 @@ public class X extends Application {
      * @return an instance of String
      */
     @GET
-    @Path("x")
+    @Path("/x")
     @Produces(MediaType.APPLICATION_JSON)
     public String resourceMethodGET() {
         JSONObject jsonObject = new JSONObject();
@@ -25,9 +25,4 @@ public class X extends Application {
         return jsonObject.toString();
     }
 
-    public static void main(String args[]) {
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("result", "OK");
-        System.out.println(jsonObject);
-    }
 }
