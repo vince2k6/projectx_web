@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: projectx-deploy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: projectx
+      labels:
+        app: projectx
+    spec:
+      containers:
+        - name: projectx
+          image: projectx:1.2
+          ports:
+            - name: http
+              containerPort: 8080
+              
