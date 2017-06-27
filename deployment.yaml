@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: projectx
-          image: projectx:1.2
+          image: cedbossneo/gto-projectx
           ports:
             - name: http
               containerPort: 8080
